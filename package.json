@@ -1,0 +1,28 @@
+{
+  "name": "embedded-whatsapp-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "tsx src/signer.check.ts",
+    "smoke": "tsx smoke/run.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.1141.0",
+    "@kapso/whatsapp-cloud-api": "^0.3.0",
+    "express": "^5.2.1",
+    "viem": "^2.56.9"
+  },
+  "devDependencies": {
+    "@noble/curves": "^1.9.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
